@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>KMP</title>
+      <link href="/2024/09/02/KMP/"/>
+      <url>/2024/09/02/KMP/</url>
+      
+        <content type="html"><![CDATA[<p>KMP主要应用在字符串匹配上。</p><p>KMP的主要思想是当出现字符串不匹配时，可以知道一部分之前已经匹配的文本内容，可以利用这些信息避免从头再去做匹配了。</p><p><img src="/KMP/kmp.gif" alt="动图"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> wildcard </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 原创 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>并查集</title>
       <link href="/2024/08/31/And-check-the-collection/"/>
       <url>/2024/08/31/And-check-the-collection/</url>
