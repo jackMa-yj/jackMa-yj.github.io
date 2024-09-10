@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>二叉树</title>
+      <link href="/2024/09/10/Binary-tree/"/>
+      <url>/2024/09/10/Binary-tree/</url>
+      
+        <content type="html"><![CDATA[<p>二叉树路径的问题大致可以分为两类：<br>1、自顶向下：<br>顾名思义，就是从某一个节点(不一定是根节点)，从上向下寻找路径，到某一个节点(不一定是叶节点)结束</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">一般路径：</span><br><span class="line">vector&lt;vector&lt;<span class="type">int</span>&gt;&gt;res;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">dfs</span><span class="params">(TreeNode*root,vector&lt;<span class="type">int</span>&gt;path)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(!root) <span class="keyword">return</span>;  <span class="comment">//根节点为空直接返回</span></span><br><span class="line">    path.<span class="built_in">push_back</span>(root-&gt;val);  <span class="comment">//作出选择</span></span><br><span class="line">    <span class="keyword">if</span>(!root-&gt;left &amp;&amp; !root-&gt;right) <span class="comment">//如果到叶节点  </span></span><br><span class="line">    &#123;</span><br><span class="line">        res.<span class="built_in">push_back</span>(path);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">dfs</span>(root-&gt;left,path);  <span class="comment">//继续递归</span></span><br><span class="line">    <span class="built_in">dfs</span>(root-&gt;right,path);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"># **给定和的路径：**</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">dfs</span><span class="params">(TreeNode*root, <span class="type">int</span> sum, vector&lt;<span class="type">int</span>&gt; path)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (!root)</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    sum -= root-&gt;val;</span><br><span class="line">    path.<span class="built_in">push_back</span>(root-&gt;val);</span><br><span class="line">    <span class="keyword">if</span> (!root-&gt;left &amp;&amp; !root-&gt;right &amp;&amp; sum == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        res.<span class="built_in">push_back</span>(path);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">dfs</span>(root-&gt;left, sum, path);</span><br><span class="line">    <span class="built_in">dfs</span>(root-&gt;right, sum, path);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>2、非自顶向下：<br>就是从任意节点到任意节点的路径，不需要自顶向下</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> res=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">maxPath</span><span class="params">(TreeNode *root)</span> <span class="comment">//以root为路径起始点的最长路径</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (!root)</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span> left=<span class="built_in">maxPath</span>(root-&gt;left);</span><br><span class="line">    <span class="type">int</span> right=<span class="built_in">maxPath</span>(root-&gt;right);</span><br><span class="line">    res = <span class="built_in">max</span>(res, left + right + root-&gt;val); <span class="comment">//更新全局变量  </span></span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">max</span>(left, right);   <span class="comment">//返回左右路径较长者</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> wildcard </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 原创 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>KMP</title>
       <link href="/2024/09/02/KMP/"/>
       <url>/2024/09/02/KMP/</url>
