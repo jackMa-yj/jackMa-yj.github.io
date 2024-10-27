@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>&#39;Test&#39;</title>
+      <link href="/2024/10/27/Test/"/>
+      <url>/2024/10/27/Test/</url>
+      
+        <content type="html"><![CDATA[<h3 id="什么是测试用例？"><a href="#什么是测试用例？" class="headerlink" title="什么是测试用例？"></a>什么是测试用例？</h3><ul><li>标题</li><li>测试环境</li><li>测试数据</li><li>测试步骤</li><li>期望结果</li></ul><h3 id="多表查询"><a href="#多表查询" class="headerlink" title="多表查询"></a>多表查询</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> s.student_name</span><br><span class="line"><span class="keyword">FROM</span> students s</span><br><span class="line"><span class="keyword">JOIN</span> courses c <span class="keyword">ON</span> s.course_id <span class="operator">=</span> c.course_id</span><br><span class="line"><span class="keyword">WHERE</span> c.course_name <span class="operator">=</span> <span class="string">&#x27;数学&#x27;</span>;</span><br></pre></td></tr></table></figure><h3 id="多表修改"><a href="#多表修改" class="headerlink" title="多表修改"></a>多表修改</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> students</span><br><span class="line"><span class="keyword">JOIN</span> courses <span class="keyword">ON</span> students.course_id <span class="operator">=</span> courses.course_id</span><br><span class="line"><span class="keyword">SET</span> students.course_id <span class="operator">=</span> <span class="number">2</span></span><br><span class="line"><span class="keyword">WHERE</span> courses.course_name <span class="operator">=</span> <span class="string">&#x27;数学&#x27;</span>;</span><br></pre></td></tr></table></figure><h3 id="多表删除"><a href="#多表删除" class="headerlink" title="多表删除"></a>多表删除</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> s</span><br><span class="line"><span class="keyword">FROM</span> students s</span><br><span class="line"><span class="keyword">JOIN</span> courses c <span class="keyword">ON</span> s.course_id <span class="operator">=</span> c.course_id</span><br><span class="line"><span class="keyword">WHERE</span> c.course_name <span class="operator">=</span> <span class="string">&#x27;数学&#x27;</span>;</span><br></pre></td></tr></table></figure><h3 id="冒烟测试"><a href="#冒烟测试" class="headerlink" title="冒烟测试"></a>冒烟测试</h3><p>主要作用是对新版本的软件进行快速初步验证，以确保系统的基本功能正常，适合进一步深入测试。<br>代码评审是检查源代码是否达到模块设计的要求。</p><h3 id="性能测试（Performance-Testing）"><a href="#性能测试（Performance-Testing）" class="headerlink" title="性能测试（Performance Testing）"></a>性能测试（Performance Testing）</h3><p>通过自动化的测试工具模拟多种正常、峰值以及异常负载条件来对系统的各项性能指标进行测试。</p><h3 id="负载测试（Load-Testing）"><a href="#负载测试（Load-Testing）" class="headerlink" title="负载测试（Load Testing）"></a>负载测试（Load Testing）</h3><p>模拟实际软件所承受的负载条件的系统负荷，通过不断加载（如逐渐增加模拟用户的数量）或其他加载方式来观察不同负载下系统的响应时间和数据吞吐量、系统占用的资源（CPU、内存等），以检验系统的行为和特性，以发现系统可能存在的性能瓶颈，内存泄漏，不能实时同步等问题，负载测试更多的体现了一种方法或一种技术。</p><h3 id="压力测试（stress-testing）"><a href="#压力测试（stress-testing）" class="headerlink" title="压力测试（stress testing）"></a>压力测试（stress testing）</h3><p>在强负载（大数据量、大量并发用户等）下的测试，查看应用系统在峰值使用情况下的操作行为，从而有效地发现系统的某项功能隐患，系统是否具有良好的容错能力和可恢复能力。</p><h3 id="白盒测试"><a href="#白盒测试" class="headerlink" title="白盒测试"></a>白盒测试</h3><ul><li>语句覆盖</li><li>判定覆盖</li><li>条件覆盖</li><li>判定&#x2F;条件覆盖</li><li>条件组合覆盖</li><li>路径覆盖。</li></ul><h3 id="黑盒测试"><a href="#黑盒测试" class="headerlink" title="黑盒测试"></a>黑盒测试</h3><ul><li>等价类边界值</li><li>判定表法</li><li>正交法</li><li>场景法</li><li>错误猜测法</li></ul><h3 id="软件验收测试"><a href="#软件验收测试" class="headerlink" title="软件验收测试"></a>软件验收测试</h3><p>按照开发阶段划分，测试过程可以分为以下三个主要阶段:<br>单元测试:这是对软件的最小可测试单元进行测试通常由开发人员在开发过程中进行，目的是验证代码的正确性和功能的正确性。<br>集成测试:在各个模块集成之后进行，目的是检测模块之间的接口和交互是否正确。<br>系统测试:对整个系统进行全面测试，确保所有模块和功能在集成后能够正常工作。</p><p>按照软件测试阶段划分，可以分为以下几种测试：<br>Alpha测试:在开发环境或类似环境下进行的内部测试，通常由开发团队进行，目的是发现并修复软件中的缺陷。<br>Beta测试:在真实环境下进行的外部测试，由用户或第三方进行，目的是获取用户反馈和发现潜在问题。<br>验收测试:由客户或最终用户进行，以确认软件是否满足需求和要求。<br>冒烟测试:在每次构建后进行的快速测试，目的是快速验证软件的基本功能是否正常，确保没有重大问题。</p><p>对面向过程的系统采用的集成策略有：自顶向下，自底向上</p><p>为了提高测试效率，最佳的选择是：选择发现错误可能性大的数据作为测试数据。</p><p>软件测试中的二八原则暗示着测试发现的错误中的80%很可能起源于程序模块的20%。</p><p>错误猜测法基于这样一种假设，以前犯过的错误，以后同样会犯，我犯过的错误别人同样会犯，前人犯过的错误，后人同样会犯。</p><p>测试人员要坚持原则，缺陷未修复完坚决不予通过。</p><p>验收测试一般由客户或最终用户参与，有时会委托给测试团队协助，目的是验证系统是否符合用户需求和合同要求。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> wildcard </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 原创 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Graph-Theory</title>
       <link href="/2024/09/22/Graph-Theory/"/>
       <url>/2024/09/22/Graph-Theory/</url>
