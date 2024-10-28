@@ -1,0 +1,375 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>'Face_warp' | 昔人已乘黄鹤去 此地空余黄鹤楼</title><meta name="author" content="Jackma"><meta name="copyright" content="Jackma"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="我们来逐个回答这些问题，便于你理解： 2. static 和 const **static**：在C++中，static关键字可以有不同的含义：  在函数内部：用于声明静态变量，使其在函数调用结束后依旧保留状态。 在类中：用于声明类的静态成员变量或静态成员函数。静态成员属于类而非对象，所有对象共享。 在文件作用域：将函数或变量声明为静态可以限制其作用域，只在当前文件中可见。   **const**">
+<meta property="og:type" content="article">
+<meta property="og:title" content="&#39;Face_warp&#39;">
+<meta property="og:url" content="https://jackma-yj.github.io/2024/10/28/Face-warp/index.html">
+<meta property="og:site_name" content="昔人已乘黄鹤去 此地空余黄鹤楼">
+<meta property="og:description" content="我们来逐个回答这些问题，便于你理解： 2. static 和 const **static**：在C++中，static关键字可以有不同的含义：  在函数内部：用于声明静态变量，使其在函数调用结束后依旧保留状态。 在类中：用于声明类的静态成员变量或静态成员函数。静态成员属于类而非对象，所有对象共享。 在文件作用域：将函数或变量声明为静态可以限制其作用域，只在当前文件中可见。   **const**">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://pica.zhimg.com/v2-8dd8b68881f9d180458d2c380271ff7e_r.jpg?source=1940ef5c">
+<meta property="article:published_time" content="2024-10-28T03:06:46.000Z">
+<meta property="article:modified_time" content="2024-10-28T03:31:23.379Z">
+<meta property="article:author" content="Jackma">
+<meta property="article:tag" content="博客">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pica.zhimg.com/v2-8dd8b68881f9d180458d2c380271ff7e_r.jpg?source=1940ef5c"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://jackma-yj.github.io/2024/10/28/Face-warp/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?var _hmt = _hmt || []; (function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?5be901248774774bf8fc65c7df025c07"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })();";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":500},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '\'Face_warp\'',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: true,
+  isToc: true,
+  postUpdate: '2024-10-28 11:31:23'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/style.css"><meta name="generator" content="Hexo 7.1.1"></head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+document.addEventListener('pjax:send', () => {
+  Pace.restart()
+})
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/blue/pace-theme-minimal.min.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/./img/myimg.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">21</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pica.zhimg.com/v2-8dd8b68881f9d180458d2c380271ff7e_r.jpg?source=1940ef5c')"><nav id="nav"><span id="blog-info"><a href="/" title="昔人已乘黄鹤去 此地空余黄鹤楼"><span class="site-name">昔人已乘黄鹤去 此地空余黄鹤楼</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">'Face_warp'</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-10-28T03:06:46.000Z" title="Created 2024-10-28 11:06:46">2024-10-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-10-28T03:31:23.379Z" title="Updated 2024-10-28 11:31:23">2024-10-28</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word Count:</span><span class="word-count">2.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading Time:</span><span>8mins</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="'Face_warp'"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>我们来逐个回答这些问题，便于你理解：</p>
+<h3 id="2-static-和-const"><a href="#2-static-和-const" class="headerlink" title="2. static 和 const"></a>2. <code>static</code> 和 <code>const</code></h3><ul>
+<li><p>**<code>static</code>**：在C++中，<code>static</code>关键字可以有不同的含义：</p>
+<ul>
+<li><strong>在函数内部</strong>：用于声明静态变量，使其在函数调用结束后依旧保留状态。</li>
+<li><strong>在类中</strong>：用于声明类的静态成员变量或静态成员函数。静态成员属于类而非对象，所有对象共享。</li>
+<li><strong>在文件作用域</strong>：将函数或变量声明为静态可以限制其作用域，只在当前文件中可见。</li>
+</ul>
+</li>
+<li><p>**<code>const</code>**：<code>const</code>关键字用于定义常量或不可修改的变量。<code>const</code>修饰的变量必须在声明时初始化，且不可更改。常见的用法包括：</p>
+<ul>
+<li>修饰指针，使指针内容不可更改或指针本身不可更改（<code>const int* p</code>与<code>int* const p</code>）。</li>
+<li>修饰类成员函数，使其不可修改类成员数据，适用于只读访问。</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-指针数组-和-数组指针"><a href="#3-指针数组-和-数组指针" class="headerlink" title="3. 指针数组 和 数组指针"></a>3. 指针数组 和 数组指针</h3><ul>
+<li><strong>指针数组</strong>：即存储指针的数组，数组的每个元素都是指向某种数据类型的指针。例如，<code>int* arr[10]</code>是一个指针数组，包含10个指向<code>int</code>的指针。</li>
+<li><strong>数组指针</strong>：即指向数组的指针，指针指向一个数组的起始地址。例如，<code>int (*p)[10]</code>是一个数组指针，指向一个包含10个<code>int</code>元素的数组。</li>
+</ul>
+<h3 id="4-线程池（使用时的注意事项）"><a href="#4-线程池（使用时的注意事项）" class="headerlink" title="4. 线程池（使用时的注意事项）"></a>4. 线程池（使用时的注意事项）</h3><p>线程池用于管理多个线程的创建和销毁，避免线程频繁创建带来的开销。使用线程池时需要注意：</p>
+<ul>
+<li><strong>任务划分</strong>：确保任务独立、无依赖，避免线程竞争。</li>
+<li><strong>线程数量</strong>：根据CPU核心数和任务类型决定线程池大小，避免创建过多线程。</li>
+<li><strong>异常处理</strong>：确保线程中的异常被捕获，否则会导致线程崩溃或未完成任务。</li>
+<li><strong>资源回收</strong>：线程池应具备合理的线程回收机制，避免资源泄漏。</li>
+</ul>
+<h3 id="5-TCP-和-UDP-的区别"><a href="#5-TCP-和-UDP-的区别" class="headerlink" title="5. TCP 和 UDP 的区别"></a>5. TCP 和 UDP 的区别</h3><ul>
+<li><strong>TCP</strong>（Transmission Control Protocol）：一种面向连接的可靠传输协议，数据传输之前需要建立连接，保证数据的有序和准确到达。</li>
+<li><strong>UDP</strong>（User Datagram Protocol）：一种无连接的传输协议，不保证数据到达顺序和准确性，传输速度较快，适合实时应用如视频流和游戏。</li>
+</ul>
+<h3 id="6-TCP-三次握手-（服务器端-SYN-ACK-丢失处理）"><a href="#6-TCP-三次握手-（服务器端-SYN-ACK-丢失处理）" class="headerlink" title="6. TCP 三次握手 （服务器端 SYN.ACK 丢失处理）"></a>6. TCP 三次握手 （服务器端 SYN.ACK 丢失处理）</h3><p>TCP三次握手：</p>
+<ol>
+<li><strong>客户端</strong>发送SYN包请求连接。</li>
+<li><strong>服务器端</strong>收到后返回SYN.ACK确认连接。</li>
+<li><strong>客户端</strong>再发送ACK确认包，连接建立。</li>
+</ol>
+<p>若服务器端的SYN.ACK丢失，客户端会因等待超时重新发送SYN，触发服务器端重新回复SYN.ACK。</p>
+<h3 id="7-TCP-如何保证数据传输的准确性，机制有哪些"><a href="#7-TCP-如何保证数据传输的准确性，机制有哪些" class="headerlink" title="7. TCP 如何保证数据传输的准确性，机制有哪些"></a>7. TCP 如何保证数据传输的准确性，机制有哪些</h3><p>TCP提供可靠传输的机制包括：</p>
+<ul>
+<li><strong>序列号</strong>：每个包都有唯一序号，接收方可以按序组装数据并检测丢失。</li>
+<li><strong>确认应答</strong>：接收方需确认收到数据包，未确认的数据包会重发。</li>
+<li><strong>流量控制</strong>：接收方可以通知发送方其接收能力，避免发送过多数据。</li>
+<li><strong>拥塞控制</strong>：通过调整发送速度，避免网络拥堵。</li>
+<li><strong>检验和</strong>：每个数据包有校验码，用于检测传输中的数据损坏。</li>
+</ul>
+<h3 id="8-如何理解-TCP-是面向连接的基于字节流的协议，UDP-是面向无连接的基于数据报的协议"><a href="#8-如何理解-TCP-是面向连接的基于字节流的协议，UDP-是面向无连接的基于数据报的协议" class="headerlink" title="8. 如何理解 TCP 是面向连接的基于字节流的协议，UDP 是面向无连接的基于数据报的协议"></a>8. 如何理解 TCP 是面向连接的基于字节流的协议，UDP 是面向无连接的基于数据报的协议</h3><ul>
+<li><strong>TCP</strong>：面向连接的字节流协议，即数据在连接建立后以字节流形式连续传输。TCP需建立连接（如三次握手），适合顺序性和准确性要求高的传输。</li>
+<li><strong>UDP</strong>：无连接的数据报协议，每个数据包独立传输，不依赖先前包。无需建立连接，适合实时性要求高的应用。</li>
+</ul>
+<h3 id="9-IPC（进程间通信）"><a href="#9-IPC（进程间通信）" class="headerlink" title="9. IPC（进程间通信）"></a>9. IPC（进程间通信）</h3><p>IPC指多个进程之间数据交换和通信的方法，常见的IPC机制包括：</p>
+<ul>
+<li><strong>管道</strong>和<strong>有名管道</strong>：用于单向或双向进程间数据传输。</li>
+<li><strong>信号量</strong>：用于进程间同步和资源控制。</li>
+<li><strong>共享内存</strong>：多个进程直接访问内存区域，速度快。</li>
+<li><strong>消息队列</strong>：进程通过消息发送接收数据。</li>
+<li><strong>套接字</strong>：通过网络实现本地或分布式进程通信。</li>
+</ul>
+<h3 id="10-有名管道（FIFO）的缺点"><a href="#10-有名管道（FIFO）的缺点" class="headerlink" title="10. 有名管道（FIFO）的缺点"></a>10. 有名管道（FIFO）的缺点</h3><p>有名管道的缺点主要有：</p>
+<ul>
+<li><strong>只能在同一主机</strong>上通信，不能跨主机。</li>
+<li><strong>半双工通信</strong>：数据只能单向传输，需建立两个管道实现双向通信。</li>
+<li><strong>阻塞读写</strong>：读进程或写进程可能会因为另一方未准备好而阻塞。</li>
+</ul>
+<h3 id="12-Shell-的-for-循环"><a href="#12-Shell-的-for-循环" class="headerlink" title="12. Shell 的 for 循环"></a>12. Shell 的 for 循环</h3><p>Shell的<code>for</code>循环用于遍历列表中的每个元素：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for var in item1 item2 item3</span><br><span class="line">do</span><br><span class="line"><span class="meta prompt_">  # </span><span class="language-bash">执行的命令</span></span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+<p>或用于遍历文件、命令输出：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for var in $(ls)</span><br><span class="line">do</span><br><span class="line">  echo &quot;$var&quot;</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+
+<h3 id="C和C-的区别"><a href="#C和C-的区别" class="headerlink" title="C和C++的区别"></a>C和C++的区别</h3><ol>
+<li>C面向对象C++面向过程</li>
+<li>C++具有封装、继承、多态的性质    </li>
+<li>C++具有STL</li>
+</ol>
+<h3 id="define和const的区别"><a href="#define和const的区别" class="headerlink" title="#define和const的区别"></a>#define和const的区别</h3><ol>
+<li>一个发生在预处理阶段，一个发生在编译阶段</li>
+<li>#define只是简单的字符串替换没有进行类型的安全检查，const进行类型的安全检查</li>
+<li>#define的字符串会替换多份，更占用内存，const常量只保存一份（保存在常量区）</li>
+</ol>
+<h3 id="程序编译的过程"><a href="#程序编译的过程" class="headerlink" title="程序编译的过程"></a>程序编译的过程</h3><p>预处理：头文件展开，宏替换，条件编译，去注释<br>编译：语义分析，语法分析，目标代码生成，优化，生成汇编代码<br>汇编：生成二进制文件<br>链接：将目标文件进行链接形成可执行程序（解决符号表的问题）</p>
+<h3 id="内存的布局"><a href="#内存的布局" class="headerlink" title="内存的布局"></a>内存的布局</h3><p>从高地址到低地址（自顶向下），栈区，共享区，堆区，代码段，数据段</p>
+<img src="/2024/10/28/Face-warp/f5008a21422819f3b6c4027d3960d6db.png" class="">
+
+<h3 id="进程间的通信方式"><a href="#进程间的通信方式" class="headerlink" title="进程间的通信方式"></a>进程间的通信方式</h3><p>管道，消息队列，共享内存，信号量，Socket网络通信</p>
+<h3 id="TCP拥塞控制机制"><a href="#TCP拥塞控制机制" class="headerlink" title="TCP拥塞控制机制"></a>TCP拥塞控制机制</h3><ol>
+<li>慢启动 因为TCP链接刚建立之后不确定网络的负荷情况，因此，较好的方式就是先探测一下，即由小到大逐渐增大发送窗口，<br>通常在刚开始发送报文的时候，先把拥塞窗口的大小设置为一个最大报文段MSS的数值，而在每收到一个对新的报文的确认后，<br>就把拥塞窗口增加至多一个MSS的数值。（注意：因为是每一个ACK都会让MSS加1，所以cwnd &#x3D; cwnd*2）<br>为了防止拥塞窗口的cwnd增长过大引起网络拥塞，还需设置一个慢开始门限ssthresh状态变量，当cwnd &gt;&#x3D; ssthresh的时候，就会进入“拥塞避免算法”</li>
+<li>拥塞避免 避免增长过快导致网络拥塞，让拥塞窗口cwnd缓慢的增大，即每经过一个往返时间RTT就把发送方的拥塞窗口cwnd整体加上1，而不是加倍。<br>注意:无论是在满开始阶段还是拥塞避免阶段，只要发送方没有接收到确认信息，那么就是出现了网络拥塞，<br>则需要将慢开始门限设置为出现拥塞时的发送方窗口值的一半（但不能小于2）。然后把拥塞窗口的大小重新设置为1，执行慢开始算法。</li>
+<li>快重传 发送方连续收到三次重复的确认就应当立即重传对方尚未收到的报文</li>
+<li>快恢复 当发送方连续收到三个重复的确认，把慢开始门限设置为此时拥塞窗口值的一半<br>由于发送方现在认为网络很可能没有发生拥塞，则此时不执行慢开始算法，而是将cwnd的大小设置为减半后的慢开始门限sstream的数值，开始执行拥塞避免算法。</li>
+</ol>
+<h3 id="面向对象和面向过程的思想有什么区别"><a href="#面向对象和面向过程的思想有什么区别" class="headerlink" title="面向对象和面向过程的思想有什么区别"></a>面向对象和面向过程的思想有什么区别</h3><ol>
+<li>设计思想 面向过程：以过程（步骤）为核心，将整个程序逻辑按功能划分成一系列函数;面向对象：以对象和类为核心，将数据和行为封装到对象中，并通过对象的相互作用实现功能</li>
+<li>代码组织结构 面向过程：数据和操作是分开的;面向对象：数据和操作封装在对象中，类是对象的模板 </li>
+<li>重用性与维护性 面向过程：POP主要通过函数的重用来实现代码重用;面向对象：OOP的类和对象封装实现了更高的代码复用性</li>
+</ol>
+<h3 id="进程的几大状态"><a href="#进程的几大状态" class="headerlink" title="进程的几大状态"></a>进程的几大状态</h3><p>进程在操作系统中通常会经历几种基本状态，每种状态代表了进程当前的活动情况。常见的进程状态主要有以下几种：</p>
+<ol>
+<li><p><strong>新建（New）</strong><br>进程刚被创建，还未被系统调度到执行的状态。</p>
+</li>
+<li><p><strong>就绪（Ready）</strong><br>进程已准备好执行，但由于没有空闲的CPU，暂时等待被调度器分配资源。此状态的进程具备执行条件，只需等待分配CPU即可运行。</p>
+</li>
+<li><p><strong>运行（Running）</strong><br>进程获得了CPU资源，正在执行状态。单核处理器上通常只有一个进程处于“运行”状态，而多核处理器上可以同时运行多个进程。</p>
+</li>
+<li><p><strong>阻塞（Blocked）&#x2F;等待（Waiting）</strong><br>进程正在等待某种事件的完成（如I&#x2F;O操作、获取锁等），暂时无法继续执行。当所等待的事件发生时，进程会从阻塞状态转为就绪状态。</p>
+</li>
+<li><p><strong>终止（Terminated）&#x2F;退出（Exit）</strong><br>进程执行完毕，或由于错误而被强制结束，此时进程处于“终止”状态。系统会回收资源，等待其他进程来使用。</p>
+</li>
+<li><p><strong>挂起（Suspended）</strong><br>某些操作系统中还存在“挂起”状态，分为<strong>就绪挂起</strong>和<strong>阻塞挂起</strong>。挂起状态下的进程被暂时移出主存，以便腾出更多内存资源，但挂起进程仍保留运行信息，以备恢复。</p>
+</li>
+</ol>
+<h3 id="状态切换"><a href="#状态切换" class="headerlink" title="状态切换"></a>状态切换</h3><p>进程在运行过程中会在上述几种状态之间进行转换。例如：</p>
+<ul>
+<li><strong>就绪 → 运行</strong>：当进程被调度到CPU时。</li>
+<li><strong>运行 → 阻塞</strong>：进程需要等待I&#x2F;O操作完成时。</li>
+<li><strong>阻塞 → 就绪</strong>：等待事件完成时，进程重新进入就绪状态。</li>
+<li><strong>运行 → 就绪</strong>：当进程被剥夺CPU资源（例如时间片耗尽）时。</li>
+</ul>
+<h3 id="客户端发送-FIN-后是否能继续发送数据"><a href="#客户端发送-FIN-后是否能继续发送数据" class="headerlink" title="客户端发送 FIN 后是否能继续发送数据"></a>客户端发送 FIN 后是否能继续发送数据</h3><p>客户端发送FIN信号后，表示请求终止连接。此时，连接进入半关闭状态，服务器仍可以向客户端发送数据，<br>但客户端已无法继续发送新数据，只能接收服务器发送的数据。双方均发送FIN信号后，连接完全关闭。</p>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://jackma-yj.github.io">Jackma</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://jackma-yj.github.io/2024/10/28/Face-warp/">https://jackma-yj.github.io/2024/10/28/Face-warp/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://pica.zhimg.com/v2-8dd8b68881f9d180458d2c380271ff7e_r.jpg?source=1940ef5c" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/10/27/Test/" title="测试"><img class="cover" src="https://pica.zhimg.com/v2-8dd8b68881f9d180458d2c380271ff7e_r.jpg?source=1940ef5c" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next</div><div class="next_info">测试</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81OTU4MC8zNjA0Mg=="></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/./img/myimg.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Jackma</div><div class="author-info__description">好人欢迎到来</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">21</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/jackMa-yj/jackMa-yj.github.io"><i class="fab fa-github"></i><span>关注我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://jackma-yj.github.io" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:xxxxxx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog.csdn.net/qq_68006585?spm=1011.2415.3001.5343" target="_blank" title="博客"><i class="fa-solid fa-puzzle-piece"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content"><div>欢迎来访我的博客,有需要可以添加个人微信</div><div><img src="./img/微信.png" width="235" height="235"></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-static-%E5%92%8C-const"><span class="toc-number">1.</span> <span class="toc-text">2. static 和 const</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%8C%87%E9%92%88%E6%95%B0%E7%BB%84-%E5%92%8C-%E6%95%B0%E7%BB%84%E6%8C%87%E9%92%88"><span class="toc-number">2.</span> <span class="toc-text">3. 指针数组 和 数组指针</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E7%BA%BF%E7%A8%8B%E6%B1%A0%EF%BC%88%E4%BD%BF%E7%94%A8%E6%97%B6%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">4. 线程池（使用时的注意事项）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-TCP-%E5%92%8C-UDP-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">4.</span> <span class="toc-text">5. TCP 和 UDP 的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-TCP-%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B-%EF%BC%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF-SYN-ACK-%E4%B8%A2%E5%A4%B1%E5%A4%84%E7%90%86%EF%BC%89"><span class="toc-number">5.</span> <span class="toc-text">6. TCP 三次握手 （服务器端 SYN.ACK 丢失处理）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-TCP-%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93%E7%9A%84%E5%87%86%E7%A1%AE%E6%80%A7%EF%BC%8C%E6%9C%BA%E5%88%B6%E6%9C%89%E5%93%AA%E4%BA%9B"><span class="toc-number">6.</span> <span class="toc-text">7. TCP 如何保证数据传输的准确性，机制有哪些</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3-TCP-%E6%98%AF%E9%9D%A2%E5%90%91%E8%BF%9E%E6%8E%A5%E7%9A%84%E5%9F%BA%E4%BA%8E%E5%AD%97%E8%8A%82%E6%B5%81%E7%9A%84%E5%8D%8F%E8%AE%AE%EF%BC%8CUDP-%E6%98%AF%E9%9D%A2%E5%90%91%E6%97%A0%E8%BF%9E%E6%8E%A5%E7%9A%84%E5%9F%BA%E4%BA%8E%E6%95%B0%E6%8D%AE%E6%8A%A5%E7%9A%84%E5%8D%8F%E8%AE%AE"><span class="toc-number">7.</span> <span class="toc-text">8. 如何理解 TCP 是面向连接的基于字节流的协议，UDP 是面向无连接的基于数据报的协议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-IPC%EF%BC%88%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1%EF%BC%89"><span class="toc-number">8.</span> <span class="toc-text">9. IPC（进程间通信）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-%E6%9C%89%E5%90%8D%E7%AE%A1%E9%81%93%EF%BC%88FIFO%EF%BC%89%E7%9A%84%E7%BC%BA%E7%82%B9"><span class="toc-number">9.</span> <span class="toc-text">10. 有名管道（FIFO）的缺点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-Shell-%E7%9A%84-for-%E5%BE%AA%E7%8E%AF"><span class="toc-number">10.</span> <span class="toc-text">12. Shell 的 for 循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#C%E5%92%8CC-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">11.</span> <span class="toc-text">C和C++的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#define%E5%92%8Cconst%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">12.</span> <span class="toc-text">#define和const的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A8%8B%E5%BA%8F%E7%BC%96%E8%AF%91%E7%9A%84%E8%BF%87%E7%A8%8B"><span class="toc-number">13.</span> <span class="toc-text">程序编译的过程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E5%AD%98%E7%9A%84%E5%B8%83%E5%B1%80"><span class="toc-number">14.</span> <span class="toc-text">内存的布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F"><span class="toc-number">15.</span> <span class="toc-text">进程间的通信方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TCP%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6%E6%9C%BA%E5%88%B6"><span class="toc-number">16.</span> <span class="toc-text">TCP拥塞控制机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%92%8C%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%E7%9A%84%E6%80%9D%E6%83%B3%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><span class="toc-number">17.</span> <span class="toc-text">面向对象和面向过程的思想有什么区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E7%9A%84%E5%87%A0%E5%A4%A7%E7%8A%B6%E6%80%81"><span class="toc-number">18.</span> <span class="toc-text">进程的几大状态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8A%B6%E6%80%81%E5%88%87%E6%8D%A2"><span class="toc-number">19.</span> <span class="toc-text">状态切换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%8F%91%E9%80%81-FIN-%E5%90%8E%E6%98%AF%E5%90%A6%E8%83%BD%E7%BB%A7%E7%BB%AD%E5%8F%91%E9%80%81%E6%95%B0%E6%8D%AE"><span class="toc-number">20.</span> <span class="toc-text">客户端发送 FIN 后是否能继续发送数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">21.</span> <span class="toc-text"></span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/10/28/Face-warp/" title="'Face_warp'"><img src="https://pica.zhimg.com/v2-8dd8b68881f9d180458d2c380271ff7e_r.jpg?source=1940ef5c" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="'Face_warp'"/></a><div class="content"><a class="title" href="/2024/10/28/Face-warp/" title="'Face_warp'">'Face_warp'</a><time datetime="2024-10-28T03:06:46.000Z" title="Created 2024-10-28 11:06:46">2024-10-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/10/27/Test/" title="测试"><img src="https://pica.zhimg.com/v2-8dd8b68881f9d180458d2c380271ff7e_r.jpg?source=1940ef5c" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="测试"/></a><div class="content"><a class="title" href="/2024/10/27/Test/" title="测试">测试</a><time datetime="2024-10-27T12:51:31.000Z" title="Created 2024-10-27 20:51:31">2024-10-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/22/Graph-Theory/" title="Graph-Theory"><img src="https://pica.zhimg.com/v2-8dd8b68881f9d180458d2c380271ff7e_r.jpg?source=1940ef5c" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Graph-Theory"/></a><div class="content"><a class="title" href="/2024/09/22/Graph-Theory/" title="Graph-Theory">Graph-Theory</a><time datetime="2024-09-22T13:09:43.000Z" title="Created 2024-09-22 21:09:43">2024-09-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/10/Binary-tree/" title="二叉树"><img src="https://pica.zhimg.com/v2-8dd8b68881f9d180458d2c380271ff7e_r.jpg?source=1940ef5c" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="二叉树"/></a><div class="content"><a class="title" href="/2024/09/10/Binary-tree/" title="二叉树">二叉树</a><time datetime="2024-09-10T02:39:01.000Z" title="Created 2024-09-10 10:39:01">2024-09-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/02/KMP/" title="KMP"><img src="https://pica.zhimg.com/v2-8dd8b68881f9d180458d2c380271ff7e_r.jpg?source=1940ef5c" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="KMP"/></a><div class="content"><a class="title" href="/2024/09/02/KMP/" title="KMP">KMP</a><time datetime="2024-09-02T02:09:08.000Z" title="Created 2024-09-02 10:09:08">2024-09-02</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://pica.zhimg.com/v2-8dd8b68881f9d180458d2c380271ff7e_r.jpg?source=1940ef5c')"><div id="footer-wrap"><div class="copyright">&copy;2024 By Jackma</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><div><a class="footer-a">很高兴认识你</a></div> <div>nice to meet you!<div></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><div class="js-pjax"><script>(()=>{
+  const loadLivere = () => {
+    if (typeof LivereTower === 'object') window.LivereTower.init()
+    else {
+      (function(d, s) {
+          var j, e = d.getElementsByTagName(s)[0];
+          if (typeof LivereTower === 'function') { return; }
+          j = d.createElement(s);
+          j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+          j.async = true;
+          e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    }
+  }
+
+  if ('Livere' === 'Livere' || !false) {
+    if (false) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+    else loadLivere()
+  } else {
+    window.loadOtherComment = loadLivere
+  }
+})()</script></div><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
